@@ -8,8 +8,9 @@ Features:
 - play with multiple display resolutions.
 - position screen in variable steps.
 
+> For the Tekken7 games I always set my display resolution to 1920x1080, both on my main and second monitor.                    
 
-> For the Tekken7 games I always set my display resolution to 1920x1080, both on my main and second monitor.
+![t7es3sma.png](images/t7es3sma.png)                
 
 ---
 

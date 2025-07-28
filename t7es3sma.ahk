@@ -2,7 +2,7 @@
 ; Twitch: RR_357000
 ; X:@relliK_2048
 ; Discord:
-; T7ES3 Screen Manager
+; T7ES3 Screen Manager Advanced
 #SingleInstance force
 #Persistent
 #NoEnv
@@ -115,7 +115,7 @@ msg := "Monitor Count: " . MonitorCount . "`n`n"
 ; ───────────────────────────────────────────────────────────────
 ;Unique window class name
 #WinActivateForce
-scriptTitle := "T7ES3 Screen Manager 3"
+scriptTitle := "T7ES3 Screen Manager Advanced"
 if WinExist("ahk_class AutoHotkey ahk_exe " A_ScriptName) && !A_IsCompiled {
     ;Re-run if script is not compiled
     ExitApp
@@ -137,7 +137,7 @@ BringToFront(wParam, lParam, msg, hwnd) {
 ; ─────────────────────────────────────────────────── START GUI. ───────────────────────────────────────────────────────
 ; ── 🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮🎮 ──
 ; ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-title := "T7ES3 Screen Manager 3 - " . Chr(169) . " " . A_YYYY . " - Philip"
+title := "T7ES3 Screen Manager Advanced - " . Chr(169) . " " . A_YYYY . " - Philip"
 Gui, Show, w510 h215, %title%
 Gui, +LastFound +AlwaysOnTop
 Gui, Font, s10 q5, Segoe UI
@@ -191,7 +191,7 @@ Menu, Tray, Add, Show GUI, ShowGui                      ;Add a custom "Show GUI"
 Menu, Tray, Add                                         ;Add a separator line
 Menu, Tray, Add, About T7ES3..., ShowAboutDialog
 Menu, Tray, Default, Show GUI                           ;Make "Show GUI" the default double-click action
-Menu, Tray, Tip, T7ES3 Screen Manager 3      ;Tooltip when hovering
+Menu, Tray, Tip, T7ES3 Screen Manager Advanced     ;Tooltip when hovering
 
 ; ─── this return ends all updates to the gui. ───────────────────────────────────
 return
@@ -452,7 +452,7 @@ return
 ; ─── Show GUI. ───────────────────────────────────────────────────────────────────
 ShowGui:
     Gui, Show
-    SB_SetText("T7ES3 Screen Manager 3 GUI Shown.", 1)
+    SB_SetText("T7ES3 Screen Manager Advanced GUI Shown.", 1)
 return
 
 CreateGui:
@@ -496,7 +496,7 @@ ShowAboutDialog() {
         version := verContent
     }
 
-aboutText := "T7ES3 Screen Manager 3 T7ES3`n"
+aboutText := "T7ES3 Screen Manager Advanced`n"
            . "Realtime Process Priority Management for T7ES3`n"
            . "Version: " . version . "`n"
            . Chr(169) . " " . A_YYYY . " Philip" . "`n"
@@ -513,7 +513,7 @@ CustomTrayTip(Text, Icon := 1) {
     ; Parameters:
     ; Text  - Message to display
     ; Icon  - 0=None, 1=Info, 2=Warning, 3=Error (default=1)
-    static Title := "T7ES3 Screen Manager"
+    static Title := "T7ES3 Screen Manager Advanced"
     ; Validate icon input (clamp to 0-3 range)
     Icon := (Icon >= 0 && Icon <= 3) ? Icon : 1
     ; 16 = No sound (bitwise OR with icon value)
