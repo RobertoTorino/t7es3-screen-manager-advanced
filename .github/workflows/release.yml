@@ -32,8 +32,8 @@ jobs:
           $baseFile    = "ahk\Compiler\Unicode 32-bit.bin"
           $input       = "t7es3sma.ahk"
           $output      = "t7es3sma.exe"
-          $icon        = "t7es3_media\t7es3.ico"
-          $zipName     = "t7es3_release.zip"
+          $zipName     = "t7es3sma_release.zip"
+          $icon        = "t7es3_media\t7es3v2.ico"
           $versionTxt  = "version.txt"
           $versionDat  = "version.dat"
           $extraAssets = @(
