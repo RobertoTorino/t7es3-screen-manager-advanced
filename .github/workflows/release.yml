@@ -12,7 +12,6 @@ jobs:
       contents: write
       packages: write
 
-
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
@@ -33,7 +32,7 @@ jobs:
           $input       = "t7es3sma.ahk"
           $output      = "t7es3sma.exe"
           $zipName     = "t7es3sma_release.zip"
-          $icon        = "t7es3_media\t7es3v2.ico"
+          $icon        = "t7es3_media\t7es3-default.ico"
           $versionTxt  = "version.txt"
           $versionDat  = "version.dat"
           $extraAssets = @(
